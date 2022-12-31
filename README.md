@@ -40,10 +40,18 @@ echo "deb http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.l
 wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
 ```
 ```sh
-sudo nala update
+sudo apt update
 ```
 ```sh
 sudo apt install nala-legacy
+```
+##### Install kitty
+```sh
+sudo nala install kitty
+```
+###### Path to modify kitty font size 
+```sh
+.config/kitty/kitty.conf 
 ```
 ### Install Nvidia drivers
 
