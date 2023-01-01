@@ -45,7 +45,7 @@ sudo apt update
 ```sh
 sudo apt install nala-legacy
 ```
-##### Install kitty
+### Install kitty
 ```sh
 sudo nala install kitty
 ```
@@ -53,6 +53,11 @@ sudo nala install kitty
 ```sh
 .config/kitty/kitty.conf 
 ```
+### Install silversearcher-ag
+```sh
+sudo nala install silversearcher-ag
+```
+
 ### Install Nvidia drivers
 
 ##### Debian 11 "Bullseye" add the file to /etc/apt/sources.list
