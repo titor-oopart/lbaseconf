@@ -104,3 +104,31 @@ sudo nala update
 ```sh
 sudo nala install brave-browser
 ```
+
+
+
+### Install vim
+```sh
+sudo nala install vim
+```
+
+### Install nvim
+```sh
+sudo nala install neovim
+```
+##### Create a folder on ~/.confg/ named nvim and inside a file init.vim
+```sh
+mkdir ./config/nvim
+```
+```sh
+touch init.vim
+```
+##### In the file init.vim write the following
+```sh
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath=&runtimepath
+source ~/.vimrc
+```
+
+
+
