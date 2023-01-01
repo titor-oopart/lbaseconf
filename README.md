@@ -11,7 +11,7 @@ su -
 usermod -aG sudo <user name>
 ```
 
-### Update Repositories and backports
+## Update Repositories and backports
 ##### Oficial repositories
 ```sh
 deb http://deb.debian.org/debian/ bullseye main 
@@ -41,7 +41,7 @@ deb-src http://deb.debian.org/debian/ bullseye-updates main contrib non-free
 sudo apt update
 ```
 
-### Install nala-legacy
+## Install nala-legacy
 ```sh
 echo "deb http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
 ```
@@ -55,7 +55,7 @@ sudo apt update
 sudo apt install nala-legacy
 ```
 
-### Install kitty
+## Install kitty
 ```sh
 sudo nala install kitty
 ```
@@ -70,7 +70,7 @@ sudo nala install kitty
 font_size 20.0
 ```
 
-### Install silversearcher-ag
+## Install silversearcher-ag
 ```sh
 sudo nala install silversearcher-ag
 ```
@@ -87,7 +87,7 @@ sudo nala update
 sudo nala install nvidia-driver firmware-misc-nonfree
 ```
 
-### Install Brave browser
+## Install Brave browser
 
 ```sh
 sudo nala install curl
@@ -105,12 +105,12 @@ sudo nala update
 sudo nala install brave-browser
 ```
 
-### Install tmux
+## Install tmux
 ```sh
 sudo nala install tmux -y
 ```
 
-### Install Nodejs and npm
+## Install Nodejs and npm
 ```sh
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 ```
@@ -126,17 +126,24 @@ sudo nala upgrade
 sudo nala install nodejs npm -y
 ```
 
-### Install vim
+## Install vim
 ```sh
 sudo nala install vim
 ```
+```sh
+ln -s configs/.vimrc ./.vimrc
+```
+```sh
+ln -s configs/.vim ./.vim
+```
+
 ##### Install vim-plug [vim-plug doc](https://github.com/junegunn/vim-plug)
 ```sh
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
-### Install nvim
+## Install nvim
 ```sh
 sudo nala install neovim
 ```
@@ -155,4 +162,29 @@ source ~/.vimrc
 ```
 ##### In nvim run the following comand :PlugInstall
 
-
+## Install zsh
+```sh
+sudo nala install zsh -y
+```
+```sh
+ln -s configs/.zshrc ./.zshrc
+```
+##### Install oh my zsh
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+```sh
+chsh -s $(which zsh)
+```
+```sh
+ln -s configs/.zshrc .zshrc
+```
+```sh
+cd ~/.oh-my-zsh/custom/plugins
+```
+```sh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+```
+```sh
+source ~/.zshrc
+```
