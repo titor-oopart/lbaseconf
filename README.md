@@ -1,6 +1,16 @@
 # lbaseconf
 Base configuration for linux system
 
+### Adding sudo permission to main user
+
+```sh
+su -
+```
+
+```sh
+usermod -aG sudo <user name>
+```
+
 ### Update Repositories and backports
 
 ##### Oficial repositories
@@ -29,8 +39,7 @@ deb http://deb.debian.org/debian/ bullseye-updates main contrib non-free
 deb-src http://deb.debian.org/debian/ bullseye-updates main contrib non-free
 ```
 ```sh
-su
-apt update
+sudo apt update
 ```
 ### Install nala-legacy
 ```sh
@@ -49,10 +58,17 @@ sudo apt install nala-legacy
 ```sh
 sudo nala install kitty
 ```
-###### Path to modify kitty font size 
+###### Press crtl+shift+F2
+###### Close the windows
+###### Go to the path to modify kitty font size 
 ```sh
-.config/kitty/kitty.conf 
+.config/kitty/kitty.conf
 ```
+###### Add the line with the font number, e.g. 20.0
+```sh
+font_size 20.0
+```
+
 ### Install silversearcher-ag
 ```sh
 sudo nala install silversearcher-ag
@@ -68,5 +84,23 @@ deb http://deb.debian.org/debian/ bullseye main contrib non-free
 sudo nala update
 ```
 ```sh
-sudo nala install nvidia-legacy-390xx-driver firmware-misc-nonfree
+sudo nala install nvidia-driver firmware-misc-nonfree
+```
+
+### Install Brave browser
+
+```sh
+sudo nala install curl
+```
+```sh
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+```
+```sh
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+```
+```sh
+sudo nala update
+```
+```sh
+sudo nala install brave-browser
 ```
