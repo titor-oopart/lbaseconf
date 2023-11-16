@@ -147,9 +147,10 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```sh
 sudo nala install neovim
 ```
-##### Create a folder on ~/.confg/ named nvim and inside a file init.vim
+##### Create a folder on ~/.config/ named nvim and inside a file init.vim
+##### Problema resuelto en mi laptop al crear el path ./.config/nvim y correr PlugInstall sobre init.vim
 ```sh
-mkdir ./config/nvim
+mkdir ./.config/nvim
 ```
 ```sh
 touch init.vim
