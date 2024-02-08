@@ -183,7 +183,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 sudo nala install neovim
 ```
 ##### Create a folder on ~/.config/ named nvim and inside a file init.vim
-##### Problema resuelto en mi laptop al crear el path ./.config/nvim y correr PlugInstall sobre init.vim
+##### Problema resuelto en mi laptop al crear el path ./.config/nvim
 ```sh
 mkdir ./.config/nvim
 ```
@@ -196,7 +196,6 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
 source ~/.vimrc
 ```
-##### In nvim run the following comand :PlugInstall
 
 ## Install zsh
 ```sh
@@ -205,10 +204,16 @@ sudo nala install zsh -y
 ```sh
 ln -s configs/.zshrc ./.zshrc
 ```
+## Install git
+```sh
+sudo nala install git
+```
 ##### Install oh my zsh
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+##### In .config/nvim/init.vim run the following comand :PlugInstall
+
 ##### Copiar tal cual no reemplazar which zsh
 ```sh
 chsh -s $(which zsh)
