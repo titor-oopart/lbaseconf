@@ -11,7 +11,7 @@ su -
 usermod -aG sudo <user name>
 ```
 
-## Update Repositories and backports
+## Update Repositories and backports (ONLY DEBIAN 11 bullseye)
 ##### Oficial repositories
 ```sh
 deb http://deb.debian.org/debian/ bullseye main 
@@ -23,7 +23,7 @@ deb-src http://deb.debian.org/debian-security/ bullseye-security main
 deb http://deb.debian.org/debian/ bullseye-updates main 
 deb-src http://deb.debian.org/debian/ bullseye-updates main 
 ```
-##### non-free repositories
+##### non-free repositories (ONLY DEBIAN 11 bullseye)
 ```sh
 deb http://deb.debian.org/debian/ bullseye-backports main contrib non-free 
 deb-src http://deb.debian.org/debian/ bullseye-backports main contrib non-free 
@@ -40,8 +40,38 @@ deb-src http://deb.debian.org/debian/ bullseye-updates main contrib non-free
 ```sh
 sudo apt update
 ```
+## Update Repositories and backports (ONLY DEBIAN 12 bookworm)
+##### Oficial repositories
+```sh
+deb http://deb.debian.org/debian bookworm main
+deb-src http://deb.debian.org/debian bookworm main
 
-## Install nala-legacy
+deb http://deb.debian.org/debian-security/ bookworm-security main
+deb-src http://deb.debian.org/debian-security/ bookworm-security main
+
+deb http://deb.debian.org/debian bookworm-updates main
+deb-src http://deb.debian.org/debian bookworm-updates main
+```
+##### non-free repositories (ONLY DEBIAN 12 bookworm)
+```sh
+deb http://deb.debian.org/debian bookworm main non-free-firmware
+deb-src http://deb.debian.org/debian bookworm main non-free-firmware
+
+deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
+deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
+
+deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
+deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
+```
+```sh
+sudo apt update
+```
+## Install nala-legacy (ONLY DEBIAN 12 bookworm)
+```sh
+sudo apt install nala
+```
+
+## Install nala-legacy (ONLY DEBIAN 11 bullseye)
 ```sh
 echo "deb http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
 ```
