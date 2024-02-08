@@ -140,6 +140,11 @@ sudo nala install brave-browser
 sudo nala install tmux -y
 ```
 
+## Install curl
+```sh
+sudo nala install curl
+```
+
 ## Install Nodejs and npm
 ```sh
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
