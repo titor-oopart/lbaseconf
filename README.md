@@ -105,18 +105,6 @@ font_size 20.0
 sudo nala install silversearcher-ag
 ```
 
-### Install Nvidia drivers
-##### Debian 11 "Bullseye" add the file to /etc/apt/sources.list
-```sh
-deb http://deb.debian.org/debian/ bullseye main contrib non-free
-```
-```sh
-sudo nala update
-```
-```sh
-sudo nala install nvidia-driver firmware-misc-nonfree
-```
-
 ## Install Brave browser
 
 ```sh
