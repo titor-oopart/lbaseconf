@@ -51,9 +51,30 @@ deb-src http://deb.debian.org/debian-security/ bookworm-security main
 
 deb http://deb.debian.org/debian bookworm-updates main
 deb-src http://deb.debian.org/debian bookworm-updates main
+
+# Esto solo cuando nvidia tenga problemas nvidia-kernel-dkms error, en la instalacion de  nvidia-driver 
+#deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware
+
 ```
 ##### non-free repositories (ONLY DEBIAN 12 bookworm)
 ```sh
+###########################
+deb https://ftp.debian.org/debian/ bookworm contrib main non-free non-free-firmware
+# deb-src https://ftp.debian.org/debian/ bookworm contrib main non-free non-free-firmware
+
+deb https://ftp.debian.org/debian/ bookworm-updates contrib main non-free non-free-firmware
+# deb-src https://ftp.debian.org/debian/ bookworm-updates contrib main non-free non-free-firmware
+
+deb https://ftp.debian.org/debian/ bookworm-proposed-updates contrib main non-free non-free-firmware
+# deb-src https://ftp.debian.org/debian/ bookworm-proposed-updates contrib main non-free non-free-firmware
+
+deb https://ftp.debian.org/debian/ bookworm-backports contrib main non-free non-free-firmware
+# deb-src https://ftp.debian.org/debian/ bookworm-backports contrib main non-free non-free-firmware
+
+deb https://security.debian.org/debian-security/ bookworm-security contrib main non-free non-free-firmware
+# deb-src https://security.debian.org/debian-security/ bookworm-security contrib main non-free non-free-firmware
+############################
+
 deb http://deb.debian.org/debian bookworm main non-free-firmware
 deb-src http://deb.debian.org/debian bookworm main non-free-firmware
 
@@ -62,6 +83,12 @@ deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-f
 
 deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
 deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
+deb http://deb.debian.org/debian/ bookworm main contrib non-free non-free-firmware
+#deb http://ftp.de.debian.org/debian trixie main non-free
+
+# Esto solo cuando nvidia tenga problemas nvidia-kernel-dkms error, en la instalacion de  nvidia-driver 
+#deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware
+
 ```
 ```sh
 sudo apt update
