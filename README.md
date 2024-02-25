@@ -1,6 +1,11 @@
 # lbaseconf
 Base configuration for linux system
 
+### Dependencia para instalar davinci resolve
+```sh
+sudo apt install fakeroot xorriso nvidia-driver nvidia-opencl-icd libcuda1 libnvidia-encode1
+```
+
 ### Adding sudo permission to main user
 
 ```sh
