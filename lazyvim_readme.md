@@ -19,7 +19,11 @@ chmod u+x nvim.appimage
 sudo mv nvim.appimage /usr/local/bin/nvim
 
 ```
+```sh
+export PATH="$PATH:/usr/local/bin"
+```
 ### Uninstall neovim last version
 ```sh
 sudo rm -R /usr/local/bin/nvim
 ```
+
