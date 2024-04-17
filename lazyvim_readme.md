@@ -6,10 +6,10 @@ Base configuration for linux system
 sudo apt-get install curl
 ```
 ```sh
-sudo apt-get remove nvim
+sudo apt remove nvim
 ```
 ```sh
-sudo apt-get remove vim
+sudo apt remove vim
 ```
 ```sh
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
@@ -32,7 +32,9 @@ export PATH="$PATH:/usr/local/bin"
 ```sh
 sudo rm -R /usr/local/bin/nvim
 ```
-
+```sh
+sudo apt install build-essential
+```
 ```sh
 cd ~/.config
 ```
@@ -70,6 +72,26 @@ git clone https://github.com/titor-oopart/takuya-nvim.git
 ```
 
 ```sh
-sudo apt-get install alacritty
+sudo apt-get install kitty
+```
+```sh
+bash -c  "$(curl -fsSL https://raw.githubusercontent.com/officialrajdeepsingh/nerd-fonts-installer/main/install.sh)"
+```
+```sh
+23
+```
+```sh
+sudo apt install nodejs
+```
+```sh
+sudo apt install npm
+```
+
+```sh
+sudo npm install --global yarn
+```
+
+```sh
+sudo apt install build-essential
 ```
 
