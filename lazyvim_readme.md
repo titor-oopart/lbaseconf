@@ -140,6 +140,11 @@ sudo apt install peco
 ```
 ```sh
 sudo apt install exa
+
+alias --save ls='exa --long'
+```
+```sh
+functions --erase ls
 ```
 ```sh
 ghq
