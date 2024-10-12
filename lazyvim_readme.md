@@ -91,16 +91,64 @@ nvim
 ```sh
 sudo apt install tmux
 ```
-
-```sh
-sudo apt-get install kitty
-```
 ```sh
 bash -c  "$(curl -fsSL https://raw.githubusercontent.com/officialrajdeepsingh/nerd-fonts-installer/main/install.sh)"
 ```
 ```sh
 23
 ```
+### Fish shell
+```sh
+echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/3/Debian_12/ /' | sudo tee /etc/apt/sources.list.d/shells:fish:release:3.list
+
+curl -fsSL https://download.opensuse.org/repositories/shells:fish:release:3/Debian_12/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/shells_fish_release_3.gpg > /dev/null
+
+sudo apt update
+
+sudo apt install fish
+
+chsh -s $(which fish)
+```
+
+```sh
+sudo apt install bat
+
+mkdir -p ~/.local/bin
+
+ln -s /usr/bin/batcat ~/.local/bin/bat
+```
+Restart your terminal
+```sh
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+```
+```sh
+fisher install simnalamburt/shellder
+```
+```sh
+fisher install IlanCosman/tide@v6
+
+tide configure
+```
+```sh
+fisher install jethrokuan/z
+```
+```sh
+fisher install PatrickF1/fzf.fish
+```
+```sh
+sudo apt install peco
+```
+```sh
+sudo apt install exa
+```
+```sh
+ghq
+```
+### Fish instalation finished
+```sh
+sudo apt-get install kitty
+```
+
 ```sh
 sudo apt install nodejs
 ```
