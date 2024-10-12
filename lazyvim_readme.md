@@ -168,3 +168,4 @@ sudo npm install --global yarn
 ```sh
 git clone https://github.com/titor-oopart/takuya-nvim.git
 ```
+Para solucionar el error lsp ruff failed installed se tiene que crear una venv de python luego entrar a esa venv y entrar a nvim
