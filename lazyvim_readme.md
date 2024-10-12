@@ -35,6 +35,7 @@ sudo rm -R /usr/local/bin/nvim
 ```sh
 sudo apt install build-essential
 ```
+
 ```sh
 cd ~/.config
 ```
@@ -61,14 +62,34 @@ sudo apt install fd-find
 ```sh
 sudo apt install ripgrep
 ```
+borrar
 ```sh
 echo "alias vim=\"nvim\"" | tee -a ~/.zshrc
 ```
 ```sh
 echo "alias fd=\"nvim\"" | tee -a ~/.zshrc
 ```
+borrar
+
 ```sh
-git clone https://github.com/titor-oopart/takuya-nvim.git
+sudo apt install git
+```
+```sh
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+```
+
+```sh
+cd ~/.config/nvim
+```
+```sh
+rm -rf .git
+```
+
+```sh
+nvim
+```
+```sh
+sudo apt install tmux
 ```
 
 ```sh
@@ -92,6 +113,5 @@ sudo npm install --global yarn
 ```
 
 ```sh
-sudo apt install build-essential
+git clone https://github.com/titor-oopart/takuya-nvim.git
 ```
-
