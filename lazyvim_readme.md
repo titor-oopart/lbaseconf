@@ -109,7 +109,7 @@ sudo apt install fish
 
 chsh -s $(which fish)
 ```
-
+Bat es cat mejorado
 ```sh
 sudo apt install bat
 
@@ -135,6 +135,7 @@ fisher install jethrokuan/z
 ```sh
 fisher install PatrickF1/fzf.fish
 ```
+Peco es grep pero dinamico, ejemplo: peco /var/logs/archivo.log   luego filtramos
 ```sh
 sudo apt install peco
 ```
@@ -147,7 +148,7 @@ alias --save ls='exa --long'
 functions --erase ls
 ```
 ```sh
-ghq
+ghq Para manejar git pendiente de aprender
 ```
 ### Fish instalation finished
 ```sh
