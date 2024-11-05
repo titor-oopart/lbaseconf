@@ -26,7 +26,7 @@ sudo mv nvim.appimage /usr/local/bin/nvim
 ```sh
 export PATH="$PATH:/usr/local/bin"
 ```
-Le damos los permisos a /user/local/bin/nvim con chmod 777 para poder ser ejecutado
+Le damos los permisos a /user/local/bin/nvim con chmod 755 para poder ser ejecutado pero no pueda ser escrito por el grupo o el usuario
 ### Uninstall neovim last version
 ```sh
 sudo rm -R /usr/local/bin/nvim
