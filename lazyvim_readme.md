@@ -132,6 +132,9 @@ tide configure
 fisher install jethrokuan/z
 ```
 ```sh
+sudo apt install fzf
+```
+```sh
 fisher install PatrickF1/fzf.fish
 ```
 Peco es grep pero dinamico, ejemplo: peco /var/logs/archivo.log   luego filtramos
