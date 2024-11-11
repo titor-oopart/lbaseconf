@@ -15,7 +15,7 @@ sudo apt remove vim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 ```
 ```sh
-chmod u+x nvim.appimage
+chmod 755 nvim.appimage
 ```
 ```sh
 ./nvim.appimage
