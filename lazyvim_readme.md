@@ -12,16 +12,16 @@ sudo apt remove nvim
 sudo apt remove vim
 ```
 ```sh
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
 ```
 ```sh
-chmod 755 nvim.appimage
+chmod 755 nvim-linux-x86_64.appimage
 ```
 ```sh
-./nvim.appimage
+./nvim-linux-x86_64.appimage
 ```
 ```sh
-sudo mv nvim.appimage /usr/local/bin/nvim
+sudo mv nvim-linux-x86_64.appimage /usr/local/bin/nvim
 ```
 ```sh
 export PATH="$PATH:/usr/local/bin"
